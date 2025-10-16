@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block body_block %}
+{% load static %}
+<div class="jumbotron">
+    <h1>Diabetics Prediction </h1>
+    <div class="fieldWrapper">
+      <h2>For the values</h2>
+      <p>Blood_Glucose:{{data_bg}}</p>
+      <p>Blood_Pressure:{{data_bp}}</p>
+      <p>Skin_Thickness:{{data_sk}}</p>
+      <p>Insulin:{{data_ins}}</p>
+      <p>BMI:{{data_bmi}}</p>
+      <p>Diabetes_Pedigree_Function:{{data_dpf}}</p>
+      <p>Pregnancies:{{data_preg}}</p>
+      <p>Age:{{data_age}}</p>
+      <p>Diabetes Prediction : {{out}}</p>
+      <br>
+      {% if out == 1 %}
+        <p>You <b>will have</b>  Diabetics in the future: <b>Positive</b></p>
+      {% else %}
+        <p>You <b>will not</b> have  Diabetics in the future:<b>Negative</b></p>
+
+      {% endif %}
+    
+    <a  href="{% url 'ckdApp:ckd' %}">Diabetics Predicition</a>
+    <br>
+</div>
+{% endblock %}
