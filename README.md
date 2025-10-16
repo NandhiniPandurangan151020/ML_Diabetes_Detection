@@ -28,5 +28,5 @@ The API exposes a `/predict` endpoint that accepts JSON input and returns the pr
 
 ### 1️⃣ Clone the Repository
 ```bash
-git clone https://github.com/yourusername/diabetes-prediction-api.git
-cd diabetes-prediction-api
+git clone https://github.com/NandhiniPandurangan151020/ML_Diabetes_Detection
+
